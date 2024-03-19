@@ -14,52 +14,32 @@
         @vite(['resources/css/app.css', 'resources/js/app.js'])
     </head>
     <body>
-        <div class='max-w-[1431px] my-5 sm:px-4 md:px-8 flex items-center justify-center'>
+        <div class='mx-auto my-5 sm:px-4 md:px-8 flex items-center justify-center'>
             <div class="text-xl text-gray-900">
-                <div class='my-10 px-20 flex flex-col w-full'>
-                    <a href="/">
-                        <div class='text-center text-5xl'>MAKMAL PEMBUATAN BERINTEGRASIKAN KOMPUTER</div>
-                        <div class='my-5 text-center text-4xl'>Computer Integrated Manufacturing Lab</div>
-                    </a>
+                <div class='flex flex-col'>
+                    <div class='text-center text-5xl'>MAKMAL PEMBUATAN BERINTEGRASIKAN KOMPUTER</div>
+                    <div class='my-5 text-center text-3xl'>Computer Integrated Manufacturing Lab</div>
                 </div>
-                <div class='flex divide-x divide-blue-400'>
-                    <div class='sidebar flex-none w-64 mx-3 text-center'>
-                        <div class='bg-blue-300 mb-3'>Contents</div>
-                        <div class='p-2'>
-                            <div class='mb-3'>Member
-                                <div class='text-sky-600 hover:underline hover:text-sky-200'>
-                                    <a href="{{ route('teacher') }}">Teacher</a>
-                                </div>
-                            </div>
-                            <div class='mb-3'>Research Contents
-                                <div class='text-sky-600 hover:underline hover:text-sky-200'>Research Subject</div>
-                                <div class='text-sky-600 hover:underline hover:text-sky-200'>Research Achievements</div>
-                            </div>
-                            <div class='mb-3'>Lab life
-                                <div class='text-sky-600 hover:underline hover:text-sky-200'>Research Activities</div>
-                                <div class='text-sky-600 hover:underline hover:text-sky-200'>Extracurricular activities</div>
-                                <div class='text-sky-600 hover:underline hover:text-sky-200'>Room Facilities</div>
-                            </div>
-                            <div class='mb-3'>Access
-                                <div class='text-sky-600 hover:underline hover:text-sky-200'>Transportation</div>
-                                <div class='text-sky-600 hover:underline hover:text-sky-200'>Contact Information</div>
-                            </div>
-                        </div>
+                <div class='flex'>
+                    <div class='flex-none w-50 p-5 bg-green-400'>
+                        <div>Member</div>
+                        <div class='text-sky-600 hover:underline hover:text-sky-200'>Teacher</div>
+                        <div>Research Contents</div>
+                        <div class='text-sky-600 hover:underline hover:text-sky-200'>Research Subject</div>
+                        <div class='text-sky-600 hover:underline hover:text-sky-200'>Research Achievements</div>
                     </div>
-
-                    <!--body below here-->
-                    <div class='flex-1 px-3'>
+                    <div class='flex-1 mx-5'>
                         <h2 class='text-2xl'>Teacher</h2>
                         @foreach($teachers as $teacher)
                             <div class='flex py-3'>
-                                <div class='flex-none'>
+                                <div>
                                     @if ( $teacher->image != NULL )
                                         <img src='{{ $teacher->image }}' width=200px>
                                     @else
                                         <img src="/storage/noimage.png" width=200px>
                                     @endif
                                 </div>
-                                <div class='content ml-5 flex-1'>
+                                <div class='content mx-5'>
                                     <p>{{ $teacher->name }}</p>
                                     @if ( $teacher->webpage != NULL )
                                         <div class='flex'>

@@ -1,7 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-use App\Http\Controllers\TeacherController;
+use App\Http\Controllers\ProfileController;
 
 /*
 |--------------------------------------------------------------------------
@@ -18,6 +18,9 @@ Route::get('/', function () {
     return view('welcome');
 });
 // Route::get('/teachers', [TeacherController::class, 'index']);
-Route::get('/teachers', function() {
-    return view('profile.teacher');
+// Route::get('/teachers', function() {
+//     return view('profile.teacher');
+// });
+Route::controller(ProfileController::class)->group(function(){
+    Route::get('/teachers', 'teacher')->name('teacher');
 });
