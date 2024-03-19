@@ -15,7 +15,14 @@ return new class extends Migration
     {
         Schema::create('teachers', function (Blueprint $table) {
             $table->id();
+            $table->string('name', 100);
+            $table->string('webpage', 500)->nullable();
+            $table->string('email', 50)->nullable();
+            $table->string('tel', 20)->nullable();
+            $table->unsignedTinyInteger('category');
+            $table->string('image', 500)->nullable();
             $table->timestamps();
+            $table->softDeletes();
         });
     }
 
@@ -26,6 +33,6 @@ return new class extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('teachers');
+        Schema::dropIfExists('teacher');
     }
 };

@@ -9,6 +9,6 @@ class TeacherController extends Controller
 {
     public function index(Teacher $teacher)
     {
-        return $teacher->get();
+        return view('profile.teacher')->with(['teachers' => $teacher->get()]);
     }
 }
