@@ -2,7 +2,8 @@
 ![lab-header](image/lab-header.png)
 
 <!--## アプリケーションのイメージ-->
-![lab-website](movie/lab-website.mov)
+## Demo
+https://github.com/kk-2m/azrul-lab/assets/112247999/2d7d8266-5aa4-4e37-b993-b01894e1136f
 
 ## Feature list
 | Top page | Teacher page |
