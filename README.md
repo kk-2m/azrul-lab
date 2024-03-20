@@ -2,7 +2,7 @@
 ![lab-header](image/lab-header.png)
 
 <!--## アプリケーションのイメージ-->
-<!--https://github.com/kk-2m/kitchen-note/assets/112247999/0752d0e9-140c-499b-bea4-11d86ba1ee2b-->
+![lab-website](movie/lab-website.mov)
 
 ## Feature list
 | Top page | Teacher page |
