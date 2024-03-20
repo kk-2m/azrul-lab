@@ -14,4 +14,6 @@
     .my-store-btn{
         @apply rounded text-center p-1 bg-gray-900 text-gray-100 w-64 hover:bg-gray-700
     }
+
+
 }

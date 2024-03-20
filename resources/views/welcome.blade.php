@@ -14,7 +14,7 @@
         @vite(['resources/css/app.css', 'resources/js/app.js'])
     </head>
     <body>
-        <div class='max-w-[1431px] my-5 sm:px-4 md:px-8 flex items-center justify-center'>
+        <div class='my-5 sm:px-4 md:px-8 flex items-center justify-center'>
             <div class="text-xl text-gray-900">
                 <div class='my-10 px-20 flex flex-col w-full'>
                     <a href="/">
@@ -23,7 +23,7 @@
                     </a>
                 </div>
                 <div class='flex divide-x divide-blue-400'>
-                    <div class='sidebar flex-none w-64 mx-3 text-center'>
+                    <div class='sidebar flex-shrink-0 w-64 mx-3 text-center'>
                         <div class='bg-blue-300 mb-3'>Contents</div>
                         <div class='p-2'>
                             <div class='mb-3'>Member
@@ -48,7 +48,7 @@
                     </div>
 
                     <!--body below here-->
-                    <div class='flex-1 px-3'>
+                    <div class='flex-grow px-3'>
                         <div class='text-center my-10'>Welcome to MAKMAL PEMBUATAN BERINTEGRASIKAN KOMPUTER Home Page!</div>
                         <h3 class='text-2xl bg-blue-300 pl-3 my-2'>About contents</h3>
                         <div class='pl-3'>
